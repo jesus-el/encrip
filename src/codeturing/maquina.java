@@ -6,6 +6,7 @@ import javax.swing.JOptionPane;
 
 public class maquina extends javax.swing.JFrame {
     mensaje1 mensa1 = new mensaje1();
+    desencriptar Desencriptar=new desencriptar();
  
     /**
      * Creates new form maquina
@@ -419,7 +420,9 @@ public class maquina extends javax.swing.JFrame {
     }//GEN-LAST:event_jToggleButton1ActionPerformed
 
     private void Mje4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Mje4ActionPerformed
-        // TODO add your handling code here:
+        String mensaje=this.mensage1.getText();
+           mensaje= mensaje.replaceAll("\\s","");
+            Desencriptar.Desencriptar1(mensaje);
     }//GEN-LAST:event_Mje4ActionPerformed
 
     private void Mje5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Mje5ActionPerformed
