@@ -23,6 +23,7 @@ public class maquina extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -37,6 +38,20 @@ public class maquina extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
         resul = new javax.swing.JTextArea();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        mensage1 = new javax.swing.JTextField();
+        Mje4 = new javax.swing.JButton();
+        Mje5 = new javax.swing.JButton();
+        Mje6 = new javax.swing.JButton();
+        limpi1 = new javax.swing.JButton();
+        jToggleButton2 = new javax.swing.JToggleButton();
+        jLabel7 = new javax.swing.JLabel();
+        encriptado1 = new javax.swing.JTextField();
+        jLabel8 = new javax.swing.JLabel();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        resul1 = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(51, 51, 51));
@@ -151,7 +166,7 @@ public class maquina extends javax.swing.JFrame {
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(133, 133, 133)
                                 .addComponent(jLabel1)))
-                        .addGap(0, 18, Short.MAX_VALUE))
+                        .addGap(0, 13, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jToggleButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -186,7 +201,156 @@ public class maquina extends javax.swing.JFrame {
                 .addGap(18, 18, 18))
         );
 
-        getContentPane().add(jPanel1, java.awt.BorderLayout.CENTER);
+        jTabbedPane1.addTab("Encritar", jPanel1);
+
+        jPanel2.setBackground(new java.awt.Color(51, 51, 51));
+
+        jLabel5.setBackground(new java.awt.Color(51, 51, 51));
+        jLabel5.setFont(new java.awt.Font("Swis721 Hv BT", 0, 18)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setText("Super Defenitma");
+
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel6.setText("Mensaje ");
+
+        Mje4.setBackground(new java.awt.Color(153, 153, 153));
+        Mje4.setForeground(new java.awt.Color(51, 51, 51));
+        Mje4.setText("Mensaje 1");
+        Mje4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Mje4ActionPerformed(evt);
+            }
+        });
+
+        Mje5.setBackground(new java.awt.Color(153, 153, 153));
+        Mje5.setText("Mensaje 2");
+        Mje5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Mje5ActionPerformed(evt);
+            }
+        });
+
+        Mje6.setBackground(new java.awt.Color(153, 153, 153));
+        Mje6.setText("Mensaje 3");
+        Mje6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Mje6ActionPerformed(evt);
+            }
+        });
+
+        limpi1.setBackground(new java.awt.Color(153, 153, 153));
+        limpi1.setForeground(new java.awt.Color(204, 0, 0));
+        limpi1.setText("Limpiar");
+        limpi1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                limpi1ActionPerformed(evt);
+            }
+        });
+
+        jToggleButton2.setBackground(new java.awt.Color(153, 153, 153));
+        jToggleButton2.setFont(new java.awt.Font("Dialog", 0, 8)); // NOI18N
+        jToggleButton2.setText("X");
+        jToggleButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jToggleButton2ActionPerformed(evt);
+            }
+        });
+
+        jLabel7.setText("jLabel3");
+
+        encriptado1.setEditable(false);
+        encriptado1.setBackground(new java.awt.Color(0, 0, 0));
+        encriptado1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        encriptado1.setForeground(new java.awt.Color(255, 0, 0));
+
+        jLabel8.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel8.setText("Mensaje encriptado");
+
+        resul1.setEditable(false);
+        resul1.setBackground(new java.awt.Color(0, 0, 0));
+        resul1.setColumns(20);
+        resul1.setFont(new java.awt.Font("DialogInput", 0, 12)); // NOI18N
+        resul1.setForeground(new java.awt.Color(0, 153, 0));
+        resul1.setRows(5);
+        resul1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "code", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 11), new java.awt.Color(255, 255, 255))); // NOI18N
+        resul1.setDisabledTextColor(new java.awt.Color(255, 255, 255));
+        jScrollPane3.setViewportView(resul1);
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(23, 23, 23)
+                        .addComponent(jLabel6)
+                        .addGap(18, 18, 18)
+                        .addComponent(mensage1))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(encriptado1))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addGap(41, 41, 41)
+                                .addComponent(Mje4)
+                                .addGap(18, 18, 18)
+                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(Mje5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addGap(18, 18, 18)
+                                .addComponent(Mje6))
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel2Layout.createSequentialGroup()
+                                        .addComponent(jLabel8)
+                                        .addGap(160, 160, 160)
+                                        .addComponent(limpi1))
+                                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 378, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addGap(133, 133, 133)
+                                .addComponent(jLabel5)))
+                        .addGap(0, 13, Short.MAX_VALUE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jToggleButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap())
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(26, 26, 26)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel5)
+                    .addComponent(jToggleButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel6)
+                    .addComponent(mensage1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel7)
+                .addGap(3, 3, 3)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Mje4)
+                    .addComponent(Mje5)
+                    .addComponent(Mje6))
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 235, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel8)
+                    .addComponent(limpi1))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(encriptado1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18))
+        );
+
+        jTabbedPane1.addTab("Desencritrar", jPanel2);
+
+        getContentPane().add(jTabbedPane1, java.awt.BorderLayout.PAGE_START);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -242,6 +406,26 @@ public class maquina extends javax.swing.JFrame {
          mensage.setText(String.valueOf(""));
     }//GEN-LAST:event_jToggleButton1ActionPerformed
 
+    private void Mje4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Mje4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Mje4ActionPerformed
+
+    private void Mje5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Mje5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Mje5ActionPerformed
+
+    private void Mje6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Mje6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Mje6ActionPerformed
+
+    private void limpi1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_limpi1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_limpi1ActionPerformed
+
+    private void jToggleButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jToggleButton2ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -281,16 +465,31 @@ public class maquina extends javax.swing.JFrame {
     private javax.swing.JButton Mje1;
     private javax.swing.JButton Mje2;
     private javax.swing.JButton Mje3;
+    private javax.swing.JButton Mje4;
+    private javax.swing.JButton Mje5;
+    private javax.swing.JButton Mje6;
     private javax.swing.JTextField encriptado;
+    private javax.swing.JTextField encriptado1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JToggleButton jToggleButton1;
+    private javax.swing.JToggleButton jToggleButton2;
     private javax.swing.JButton limpi;
+    private javax.swing.JButton limpi1;
     private javax.swing.JTextField mensage;
+    private javax.swing.JTextField mensage1;
     private javax.swing.JTextArea resul;
+    private javax.swing.JTextArea resul1;
     // End of variables declaration//GEN-END:variables
 }
