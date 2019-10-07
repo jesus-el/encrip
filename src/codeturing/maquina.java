@@ -423,6 +423,7 @@ public class maquina extends javax.swing.JFrame {
         String mensaje=this.mensage1.getText();
            mensaje= mensaje.replaceAll("\\s","");
             Desencriptar.Desencriptar1(mensaje);
+            resul1.setText(String.valueOf(Desencriptar.lista1));
     }//GEN-LAST:event_Mje4ActionPerformed
 
     private void Mje5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Mje5ActionPerformed
