@@ -25,20 +25,6 @@ public class maquina extends javax.swing.JFrame {
     private void initComponents() {
 
         jTabbedPane1 = new javax.swing.JTabbedPane();
-        jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        mensage = new javax.swing.JTextField();
-        Mje1 = new javax.swing.JButton();
-        Mje2 = new javax.swing.JButton();
-        Mje3 = new javax.swing.JButton();
-        limpi = new javax.swing.JButton();
-        jToggleButton1 = new javax.swing.JToggleButton();
-        jLabel3 = new javax.swing.JLabel();
-        encriptado = new javax.swing.JTextField();
-        jLabel4 = new javax.swing.JLabel();
-        jScrollPane2 = new javax.swing.JScrollPane();
-        resul = new javax.swing.JTextArea();
         jPanel2 = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
@@ -54,156 +40,33 @@ public class maquina extends javax.swing.JFrame {
         jScrollPane3 = new javax.swing.JScrollPane();
         resul1 = new javax.swing.JTextArea();
         jLabel9 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        mensage = new javax.swing.JTextField();
+        limpi = new javax.swing.JButton();
+        jToggleButton1 = new javax.swing.JToggleButton();
+        jLabel3 = new javax.swing.JLabel();
+        encriptado = new javax.swing.JTextField();
+        jLabel4 = new javax.swing.JLabel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        resul = new javax.swing.JTextArea();
+        jLabel10 = new javax.swing.JLabel();
+        jPanel3 = new javax.swing.JPanel();
+        jPanel4 = new javax.swing.JPanel();
+        Mje1 = new javax.swing.JButton();
+        Mje2 = new javax.swing.JButton();
+        Mje3 = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setBackground(new java.awt.Color(51, 51, 51));
+        setMaximumSize(null);
+        setPreferredSize(new java.awt.Dimension(620, 540));
+        setResizable(false);
 
-        jPanel1.setBackground(new java.awt.Color(51, 51, 51));
-
-        jLabel1.setBackground(new java.awt.Color(51, 51, 51));
-        jLabel1.setFont(new java.awt.Font("Swis721 Hv BT", 0, 18)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("Super Defenitma");
-
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("Mensaje ");
-
-        Mje1.setBackground(new java.awt.Color(153, 153, 153));
-        Mje1.setForeground(new java.awt.Color(51, 51, 51));
-        Mje1.setText("Mensaje 1");
-        Mje1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Mje1ActionPerformed(evt);
-            }
-        });
-
-        Mje2.setBackground(new java.awt.Color(153, 153, 153));
-        Mje2.setText("Mensaje 2");
-        Mje2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Mje2ActionPerformed(evt);
-            }
-        });
-
-        Mje3.setBackground(new java.awt.Color(153, 153, 153));
-        Mje3.setText("Mensaje 3");
-        Mje3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Mje3ActionPerformed(evt);
-            }
-        });
-
-        limpi.setBackground(new java.awt.Color(153, 153, 153));
-        limpi.setForeground(new java.awt.Color(204, 0, 0));
-        limpi.setText("Limpiar");
-        limpi.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                limpiActionPerformed(evt);
-            }
-        });
-
-        jToggleButton1.setBackground(new java.awt.Color(153, 153, 153));
-        jToggleButton1.setFont(new java.awt.Font("Dialog", 0, 8)); // NOI18N
-        jToggleButton1.setText("X");
-        jToggleButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jToggleButton1ActionPerformed(evt);
-            }
-        });
-
-        jLabel3.setText("jLabel3");
-
-        encriptado.setEditable(false);
-        encriptado.setBackground(new java.awt.Color(0, 0, 0));
-        encriptado.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        encriptado.setForeground(new java.awt.Color(255, 0, 0));
-
-        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("Mensaje encriptado");
-
-        resul.setEditable(false);
-        resul.setBackground(new java.awt.Color(0, 0, 0));
-        resul.setColumns(20);
-        resul.setFont(new java.awt.Font("DialogInput", 0, 12)); // NOI18N
-        resul.setForeground(new java.awt.Color(0, 153, 0));
-        resul.setRows(5);
-        resul.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "code", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 11), new java.awt.Color(255, 255, 255))); // NOI18N
-        resul.setDisabledTextColor(new java.awt.Color(255, 255, 255));
-        jScrollPane2.setViewportView(resul);
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(23, 23, 23)
-                        .addComponent(jLabel2)
-                        .addGap(18, 18, 18)
-                        .addComponent(mensage))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(encriptado))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(41, 41, 41)
-                                .addComponent(Mje1)
-                                .addGap(18, 18, 18)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(Mje2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addGap(18, 18, 18)
-                                .addComponent(Mje3))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addContainerGap()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(jLabel4)
-                                        .addGap(160, 160, 160)
-                                        .addComponent(limpi))
-                                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 378, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(133, 133, 133)
-                                .addComponent(jLabel1)))
-                        .addGap(0, 13, Short.MAX_VALUE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jToggleButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap())
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(26, 26, 26)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(jToggleButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(mensage, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel3)
-                .addGap(3, 3, 3)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Mje1)
-                    .addComponent(Mje2)
-                    .addComponent(Mje3))
-                .addGap(18, 18, 18)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 235, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4)
-                    .addComponent(limpi))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(encriptado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18))
-        );
-
-        jTabbedPane1.addTab("Encriptar", jPanel1);
+        jTabbedPane1.setBackground(new java.awt.Color(255, 255, 255));
+        jTabbedPane1.setTabLayoutPolicy(javax.swing.JTabbedPane.SCROLL_TAB_LAYOUT);
+        jTabbedPane1.setPreferredSize(new java.awt.Dimension(660, 558));
 
         jPanel2.setBackground(new java.awt.Color(51, 51, 51));
 
@@ -311,7 +174,7 @@ public class maquina extends javax.swing.JFrame {
                                         .addGap(160, 160, 160)
                                         .addComponent(limpi1))
                                     .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 378, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                        .addGap(0, 13, Short.MAX_VALUE))
+                        .addGap(0, 221, Short.MAX_VALUE))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(23, 23, 23)
                         .addComponent(jLabel6)
@@ -356,12 +219,135 @@ public class maquina extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel8)
                     .addComponent(limpi1))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 10, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 88, Short.MAX_VALUE)
                 .addComponent(encriptado1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18))
         );
 
         jTabbedPane1.addTab("Desencriptrar", jPanel2);
+
+        jPanel1.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel1.setBackground(new java.awt.Color(51, 51, 51));
+        jLabel1.setFont(new java.awt.Font("Swis721 Hv BT", 0, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("POWER SOLVERENCRIP");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(24, 20, -1, -1));
+
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setText("Mensaje ");
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 70, -1, -1));
+        jPanel1.add(mensage, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 90, 430, -1));
+
+        limpi.setBackground(new java.awt.Color(153, 153, 153));
+        limpi.setForeground(new java.awt.Color(204, 0, 0));
+        limpi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/codeturing/imagen/w1_opt (1).png"))); // NOI18N
+        limpi.setToolTipText("Limpiar Todo");
+        limpi.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 0, 0)));
+        limpi.setContentAreaFilled(false);
+        limpi.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        limpi.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
+        limpi.setSelected(true);
+        limpi.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                limpiActionPerformed(evt);
+            }
+        });
+        jPanel1.add(limpi, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 10, 40, 30));
+
+        jToggleButton1.setBackground(new java.awt.Color(153, 153, 153));
+        jToggleButton1.setFont(new java.awt.Font("Dialog", 0, 8)); // NOI18N
+        jToggleButton1.setText("X");
+        jToggleButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jToggleButton1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jToggleButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 90, 39, 20));
+
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(0, 0, 204));
+        jLabel3.setText("V1.0");
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 40, 81, -1));
+
+        encriptado.setEditable(false);
+        encriptado.setBackground(new java.awt.Color(0, 0, 0));
+        encriptado.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        encriptado.setForeground(new java.awt.Color(255, 0, 0));
+        jPanel1.add(encriptado, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 420, 470, -1));
+
+        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setText("Mensaje encriptado");
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 390, -1, -1));
+
+        resul.setEditable(false);
+        resul.setBackground(new java.awt.Color(0, 0, 0));
+        resul.setColumns(20);
+        resul.setFont(new java.awt.Font("DialogInput", 0, 12)); // NOI18N
+        resul.setForeground(new java.awt.Color(0, 153, 0));
+        resul.setRows(5);
+        resul.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "code", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 11), new java.awt.Color(0, 0, 153))); // NOI18N
+        resul.setDisabledTextColor(new java.awt.Color(255, 255, 255));
+        jScrollPane2.setViewportView(resul);
+
+        jPanel1.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 130, 470, 235));
+
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/codeturing/imagen/pr_opt.png"))); // NOI18N
+        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 360, -1, -1));
+
+        jPanel3.setBackground(new java.awt.Color(0, 0, 102));
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 14, Short.MAX_VALUE)
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 480, Short.MAX_VALUE)
+        );
+
+        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 480));
+
+        jPanel4.setBackground(new java.awt.Color(102, 102, 102));
+        jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Mje1.setBackground(new java.awt.Color(51, 51, 51));
+        Mje1.setForeground(new java.awt.Color(255, 255, 255));
+        Mje1.setText("Mensaje 1");
+        Mje1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Mje1ActionPerformed(evt);
+            }
+        });
+        jPanel4.add(Mje1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, -1));
+
+        Mje2.setBackground(new java.awt.Color(51, 51, 51));
+        Mje2.setForeground(new java.awt.Color(255, 255, 255));
+        Mje2.setText("Mensaje 2");
+        Mje2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Mje2ActionPerformed(evt);
+            }
+        });
+        jPanel4.add(Mje2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 50, -1, -1));
+
+        Mje3.setBackground(new java.awt.Color(51, 51, 51));
+        Mje3.setForeground(new java.awt.Color(255, 255, 255));
+        Mje3.setText("Mensaje 3");
+        Mje3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Mje3ActionPerformed(evt);
+            }
+        });
+        jPanel4.add(Mje3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, -1, -1));
+
+        jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 110, 410));
+
+        jTabbedPane1.addTab("Encriptar", jPanel1);
 
         getContentPane().add(jTabbedPane1, java.awt.BorderLayout.PAGE_START);
 
@@ -487,6 +473,7 @@ public class maquina extends javax.swing.JFrame {
     private javax.swing.JTextField encriptado;
     private javax.swing.JTextField encriptado1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -497,6 +484,8 @@ public class maquina extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JTabbedPane jTabbedPane1;
