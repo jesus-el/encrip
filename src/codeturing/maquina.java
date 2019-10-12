@@ -67,6 +67,8 @@ public Image getIconImage() {
         Mje6 = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
         limpi2 = new javax.swing.JButton();
+        jLabel8 = new javax.swing.JLabel();
+        jPanel7 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setBackground(new java.awt.Color(51, 51, 51));
@@ -217,14 +219,14 @@ public Image getIconImage() {
 
         jTabbedPane1.addTab("Encriptar", jPanel1);
 
-        jPanel2.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel2.setBackground(new java.awt.Color(38, 37, 45));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel5.setBackground(new java.awt.Color(51, 51, 51));
         jLabel5.setFont(new java.awt.Font("Swis721 Hv BT", 0, 18)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("POWER SOLVERENCRIP");
-        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
+        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 20, -1, -1));
 
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Mensaje ");
@@ -256,7 +258,7 @@ public Image getIconImage() {
         jLabel9.setFont(new java.awt.Font("Trebuchet MS", 0, 12)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(51, 255, 0));
         jLabel9.setText("Desencriptar");
-        jPanel2.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 30, -1, -1));
+        jPanel2.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 40, -1, -1));
 
         jPanel5.setBackground(new java.awt.Color(0, 0, 102));
 
@@ -338,6 +340,24 @@ public Image getIconImage() {
             }
         });
         jPanel2.add(limpi2, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 10, 40, 30));
+
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/codeturing/imagen/lo_opt (2).png"))); // NOI18N
+        jPanel2.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, -1));
+
+        jPanel7.setBackground(new java.awt.Color(34, 37, 52));
+
+        javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
+        jPanel7.setLayout(jPanel7Layout);
+        jPanel7Layout.setHorizontalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 510, Short.MAX_VALUE)
+        );
+        jPanel7Layout.setVerticalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 410, Short.MAX_VALUE)
+        );
+
+        jPanel2.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 70, 510, 410));
 
         jTabbedPane1.addTab("Desencriptrar", jPanel2);
 
@@ -424,9 +444,13 @@ public Image getIconImage() {
 
     private void Mje4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Mje4ActionPerformed
         String mensaje=this.mensage1.getText();
-           mensaje= mensaje.replaceAll("\\s","");
+        if (mensaje.equals("")) {
+            JOptionPane.showMessageDialog(null,"Alerta no a escrito el mensaje1");
+        } else {
+        mensaje= mensaje.replaceAll("\\s","");
             Desencriptar.Desencriptar1(mensaje);
-            resul1.setText(String.valueOf(Desencriptar.lista1));
+            resul1.setText(String.valueOf(Desencriptar.lista1)); }
+       
     }//GEN-LAST:event_Mje4ActionPerformed
 
     private void Mje5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Mje5ActionPerformed
@@ -506,6 +530,7 @@ public Image getIconImage() {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
@@ -513,6 +538,7 @@ public Image getIconImage() {
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
+    private javax.swing.JPanel jPanel7;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JTabbedPane jTabbedPane1;
