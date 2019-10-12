@@ -17,7 +17,7 @@ public class Codeturing {
          power.setTitle("POWER SOLVERENCIP");
     power.setVisible(true);
     power.setLocationRelativeTo(null);
-    ImageIcon icono = new ImageIcon("src/codeturing/imagen/23.png");
+    ImageIcon icono = new ImageIcon("src/codeturing/imagen/lo_opt.png");
 power.setIconImage(icono.getImage());
 
     String esta ="";
