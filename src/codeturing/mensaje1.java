@@ -21,7 +21,8 @@ int n3=0;
 int n4=0;
 int N1[];
     public void Encritar(String mensaje_para_encritar){
-     int Cat = mensaje_para_encritar.length();
+        try {
+             int Cat = mensaje_para_encritar.length();
      System.out.println("cantidad"+Cat);
      String V[]= new String[Cat];
      for (int i = 0; i < V.length; i++) {
@@ -88,7 +89,11 @@ int N1[];
                cont++;
             }
         lista2+=" ";
+        } 
+        } catch (Exception e) {
+         JOptionPane.showMessageDialog(null,"Error: revise bien el mensaje");
         }
+      
         
  }
     
