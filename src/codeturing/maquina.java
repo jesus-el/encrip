@@ -81,7 +81,7 @@ public Image getIconImage() {
 
         jTabbedPane1.setBackground(new java.awt.Color(255, 255, 255));
         jTabbedPane1.setTabLayoutPolicy(javax.swing.JTabbedPane.SCROLL_TAB_LAYOUT);
-        jTabbedPane1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jTabbedPane1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jTabbedPane1.setFont(new java.awt.Font("Segoe UI", 0, 11)); // NOI18N
         jTabbedPane1.setPreferredSize(new java.awt.Dimension(660, 558));
 
@@ -226,7 +226,7 @@ public Image getIconImage() {
         jLabel5.setFont(new java.awt.Font("Swis721 Hv BT", 0, 18)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("POWER SOLVERENCRIP");
-        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 20, -1, -1));
+        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 20, -1, -1));
 
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Mensaje ");
@@ -255,10 +255,10 @@ public Image getIconImage() {
 
         jPanel2.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(128, 130, 470, 350));
 
-        jLabel9.setFont(new java.awt.Font("Trebuchet MS", 0, 12)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(51, 255, 0));
+        jLabel9.setFont(new java.awt.Font("MV Boli", 0, 12)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(0, 204, 255));
         jLabel9.setText("Desencriptar");
-        jPanel2.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 40, -1, -1));
+        jPanel2.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 40, -1, -1));
 
         jPanel5.setBackground(new java.awt.Color(0, 0, 102));
 
@@ -341,8 +341,8 @@ public Image getIconImage() {
         });
         jPanel2.add(limpi2, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 10, 40, 30));
 
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/codeturing/imagen/lo_opt (2).png"))); // NOI18N
-        jPanel2.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, -1));
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/codeturing/imagen/23.png"))); // NOI18N
+        jPanel2.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
 
         jPanel7.setBackground(new java.awt.Color(34, 37, 52));
 
@@ -454,11 +454,23 @@ public Image getIconImage() {
     }//GEN-LAST:event_Mje4ActionPerformed
 
     private void Mje5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Mje5ActionPerformed
-        // TODO add your handling code here:
+        String mensaje=this.mensage1.getText();
+        if (mensaje.equals("")) {
+            JOptionPane.showMessageDialog(null,"Alerta no a escrito el mensaje1");
+        } else {
+        mensaje= mensaje.replaceAll("\\s","");
+            Desencriptar.mensajedesenciptar2(mensaje);
+            resul1.setText(String.valueOf(Desencriptar.lista1)); }
     }//GEN-LAST:event_Mje5ActionPerformed
 
     private void Mje6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Mje6ActionPerformed
-        // TODO add your handling code here:
+         String mensaje=this.mensage1.getText();
+        if (mensaje.equals("")) {
+            JOptionPane.showMessageDialog(null,"Alerta no a escrito el mensaje1");
+        } else {
+        mensaje= mensaje.replaceAll("\\s","");
+            Desencriptar.Desencriptar1(mensaje);
+            resul1.setText(String.valueOf(Desencriptar.lista1)); }
     }//GEN-LAST:event_Mje6ActionPerformed
 
     private void jToggleButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton2ActionPerformed
