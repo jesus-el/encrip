@@ -23,7 +23,7 @@ public class desencriptar {
      int resultado = comtador-3;
      System.err.println(""+resultado);
       colunas=resultado;
-      
+      //miguel
         String saludo = mensaje_para_desencriptar;
         int columnas = resultado;
         //String saludo = "HHEA1EIR44IT0C2LL63";
@@ -54,6 +54,7 @@ public class desencriptar {
         System.err.println(cadena);
      lista1=cadena;
      listotal=cadena;
+     //fin
       int n1=colunas;
          int n2=colunas;
           listotal= listotal.replaceAll("\\s","");
@@ -151,5 +152,37 @@ public class desencriptar {
             }
         }
          lista1=cadena;
+    }
+    public void Desencriptar3(String mensaje_para_desencriptar){
+     String saludo = mensaje_para_desencriptar;
+        int columnas = colunas;
+        //String saludo = "HHEA1EIR44IT0C2LL63";
+        int numFilas = getNumFilas((double) saludo.length()/ (double) columnas);
+        
+        char matrix[][] = new char[numFilas][columnas];
+        
+        int pos = 0;
+        for (int i = 0; i < matrix[0].length; i++) {
+            for (int j = 0; j < matrix.length; j++) {
+                if(pos < saludo.length()) {
+                    matrix[j][i] = saludo.charAt(pos);
+                    pos++;
+                }
+            }
+        }
+        pos = 0;
+        String cadena = "";
+        for (int i = 0; i < numFilas; i++) {
+            for (int j = 0; j < columnas; j++) {
+                if (pos < saludo.length()) {
+                  cadena += matrix[i][j];   
+                }
+               pos++;
+            }
+        }
+        
+        System.err.println(cadena);
+     lista1=cadena;
+     
     }
 }

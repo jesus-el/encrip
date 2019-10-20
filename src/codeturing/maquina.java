@@ -469,7 +469,7 @@ public Image getIconImage() {
             JOptionPane.showMessageDialog(null,"Alerta no a escrito el mensaje1");
         } else {
         mensaje= mensaje.replaceAll("\\s","");
-            Desencriptar.Desencriptar1(mensaje);
+            Desencriptar.Desencriptar3(mensaje);
             resul1.setText(String.valueOf(Desencriptar.lista1)); }
     }//GEN-LAST:event_Mje6ActionPerformed
 
