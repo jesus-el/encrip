@@ -49,8 +49,14 @@ public class desencriptar {
         lista1+=" "+">>>DEscencritacion<<";
         lista1+="\n***Mensaje 1***\n ";
         escribirDesord(MatrizDesenc(mensaje_para_desencriptar,MatrizEnc(mensaje_para_desencriptar, colunas,numFilas),colunas,numFilas));
-        
-    }
+        lista1+=">>\n"+cadenaescri2;
+        lista1+="\n***Mensaje 2***\n ";
+        escribirDesord(MatrizDesenc2(mensaje_para_desencriptar2,MatrizEnc(mensaje_para_desencriptar2, colunas,numFilas2),colunas,numFilas2,ordColumnas));
+        lista1+=">>\n"+cadenaescri2;
+         lista1+="\n ****Mensaje 3****\n";
+         escribirDesord(MatrizDesenc(mensaje_para_desencriptar3,MatrizEnc(mensaje_para_desencriptar3, colunas,numFilas3),colunas,numFilas3));
+         lista1+=">>\n"+cadenaescri2;
+    }   
     public void mensajedesenciptar2(String mensaje_para_desencriptar){
       
     }
@@ -154,7 +160,7 @@ public class desencriptar {
 					}
 				}
 				lis =lis+cadena;
-                               
+                               cadenaescri2=lis;
                                
 			}
                public static String[][] MatrizEnc(String mensaje,int numCol, int numfilas){
