@@ -29,160 +29,174 @@ public class desencriptar {
         //String saludo = "HHEA1EIR44IT0C2LL63";
         int numFilas = getNumFilas((double) saludo.length()/ (double) columnas);
         
-        char matrix[][] = new char[numFilas][columnas];
         
-        int pos = 0;
-        for (int i = 0; i < matrix[0].length; i++) {
-            for (int j = 0; j < matrix.length; j++) {
-                if(pos < saludo.length()) {
-                    matrix[j][i] = saludo.charAt(pos);
-                    pos++;
-                }
-            }
-        }
-        pos = 0;
-        String cadena = "";
-        for (int i = 0; i < numFilas; i++) {
-            for (int j = 0; j < columnas; j++) {
-                if (pos < saludo.length()) {
-                  cadena += matrix[i][j];   
-                }
-               pos++;
-            }
-        }
-        
-        System.err.println(cadena);
-     lista1=cadena;
-     listotal=cadena;
-     //fin
-      int n1=colunas;
-         int n2=colunas;
-          listotal= listotal.replaceAll("\\s","");
-          listotal= listotal.replace("null","");
-        String listapru="",li;
-        System.err.println("n1:"+n1+" los fines son"+listapru+"lista"+lista1+"tamaño"+lista1.length()+"tamañototal"+listotal.length()+"total"+listotal); 
-        N1= new int[n1];
-         for (int i = 0; i < n1; i++) {
-             if (Character.toString(listotal.charAt(listotal.length()-n2)).equals(" ")) {
-                 System.err.println("n1:"+n1+" los fines son"+listapru+"lista"+lista1+"tamaño"+lista1.length()+"tamañototal"+listotal.length()+"total"+listotal); 
-             }else{
-               //  if (Character.isDigit(listotal.charAt(listotal.length()-n2))) {
-                   N1[i]=Integer.parseInt(Character.toString(listotal.charAt(listotal.length()-n2)));
-             li=Character.toString(listotal.charAt(listotal.length()-n2));
-             System.err.println("n2:"+n2+" los fines son"+li);  
-             listapru+=N1[i];  
-              //   }
- 
-              
-             }
-            n2--; 
-         }
-     System.err.println("n1:"+n1+" los fines son"+listapru); 
-     /*int re=Cat/resultado;
-     int filas1=(int)Math.ceil((Cat/resultado)+1);
-       System.out.println("FILA"+filas1);
-       //fila son 4 y la coluna
-      String Matriz1[][]=new String[filas1][resultado];
-      int Cont=0;
-      for (int i = 0; i < Matriz1[0].length; i++) {
-            for (int j = 0; j < Matriz1.length; j++) {
-             System.out.println("CONTADOR"+Cont+" CATIDAD"+Cat+" J"+j+" I"+i+" rsultado"+resultado);
-                if(Cont<Cat){
-                    
-                           Matriz1[j][i]=Character.toString(mensaje_para_desencriptar.charAt(Cont)) ;               
-                lista1+=" "+Matriz1[j][i];
-                 System.out.println(""+lista1);
-                    
-                 
-             }else{
-               Matriz1[j][i]=" ";
-             lista1+=" "+Matriz1[j][i];
-             }
-                Cont++;
-            }
-        lista1+="\n";
-      }
-     System.out.println(""+lista1);
-      lista1="";
-        for (int i = 0; i < filas1; i++) {
-            for (int j = 0; j < resultado; j++) {
-                 lista1+=Matriz1[i][j];
-            }
-           
-        }
-      System.out.println(""+lista1);
-    /*  String Matriz2[][] = new String[filas1][resultado];
-    lista1="";
-        for (int i = 0; i < resultado; i++) {
-            for (int j = 0; j < filas1; j++) {
-                if (re==3.5) {
-                    Matriz2[j][i]="";
-                }else{
-                Matriz2[j][i]=Matriz1[j][i] ;
-                lista1+=" "+Matriz1[i][j];
-                }
-                
-                 
-            }
-            lista1+="\n";
-        }
-        System.out.println(""+lista1);
-      */
-    //esto no funciona por haora
-    
     }
     public void mensajedesenciptar2(String mensaje_para_desencriptar){
-       int columnas=colunas; 
-        int numFilas = getNumFilas((double) mensaje_para_desencriptar.length()/ (double) columnas);
-        
-         char matrix[][] = new char[numFilas][columnas];
-         int pos = 0;
-        for (int i = 0; i < matrix[0].length; i++) {
-            for (int j = 0; j < matrix.length; j++) {
-                if(pos < mensaje_para_desencriptar.length()) {
-                    matrix[j][((N1[i])-1)] = mensaje_para_desencriptar.charAt(pos);
-                    pos++;
-                }
-            }
-        }
-         String cadena = "";
-        for (int i = 0; i < numFilas; i++) {
-            for (int j = 0; j < columnas; j++) {
-                cadena += matrix[i][j];
-            }
-        }
-         lista1=cadena;
+      
     }
     public void Desencriptar3(String mensaje_para_desencriptar){
-     String saludo = mensaje_para_desencriptar;
-        int columnas = colunas;
-        //String saludo = "HHEA1EIR44IT0C2LL63";
-        int numFilas = getNumFilas((double) saludo.length()/ (double) columnas);
-        
-        char matrix[][] = new char[numFilas][columnas];
-        
-        int pos = 0;
-        for (int i = 0; i < matrix[0].length; i++) {
-            for (int j = 0; j < matrix.length; j++) {
-                if(pos < saludo.length()) {
-                    matrix[j][i] = saludo.charAt(pos);
-                    pos++;
-                }
-            }
-        }
-        pos = 0;
-        String cadena = "";
-        for (int i = 0; i < numFilas; i++) {
-            for (int j = 0; j < columnas; j++) {
-                if (pos < saludo.length()) {
-                  cadena += matrix[i][j];   
-                }
-               pos++;
-            }
-        }
-        
-        System.err.println(cadena);
-     lista1=cadena;
+     
      
     }
+    public static String[][] MatrizDesenc(String mensaje,String matriz[][],int numcol,int numfil){
+	
+				int k=0;
+				for(int j=0;j<numcol; j++){
+					for(int i=0;i<numfil; i++){
+						if(k<mensaje.length()){
+							if(matriz[i][j].equals("")){
+								
+							}else{matriz[i][j]=Character.toString(mensaje.charAt(k));;
+								k++;}
+						}else{
+							matriz[i][j]= "";
+						}
+						
+					}
+				}
+				return matriz;//regresa la matriz
+			}
+
+    
+    public static String[][] MatrizDesenc2(String mensaje,String matriz[][],int numcol,int numfil,String cod){
+				
+				 
+				int k=0;
+				String matriz2[][]=new String[numfil][numcol];
+				 for(int j=0;j<numfil; j++){
+					
+					for(int i=0;i<numcol; i++){
+						matriz2[j][i]="#";
+					}
+				}
+				 
+				for(int j=0;j<numcol; j++){
+				int num = Integer.parseInt(Character.toString(cod.charAt(j)))-1;
+					for(int i=0;i<numfil; i++){
+						if(k<cod.length()){
+							if(matriz[i][num].equals("")){
+								 matriz2[i][j]="";
+							}else{
+							matriz2[i][j]=Character.toString(mensaje.charAt(k));
+								k++;	
+                                                           
+							}
+								
+						}else{
+							matriz2[i][j]= "";
+						}
+						
+					}
+				}
+				return ordenarMatriz(matriz2,numcol, numfil,cod);//regresa la matriz
+			}
+			
+			public static String[][] ordenarMatriz(String matriz[][],int numcol,int numfil,String cod){
+			    String[] vectorCod= cod.split("");
+                            String[] vecTemp = null;
+				int numTemp = 0;
+				for(int i=0;i<numcol-1; i++){
+					for(int j=i+1;j<numcol; j++){
+						if(cod.charAt(i)>cod.charAt(j)){
+							numTemp=Integer.parseInt(Character.toString(cod.charAt(i)));
+							for(int k=0;k<numfil; k++) vecTemp[k] = matriz[k][i];
+							vectorCod[i]=vectorCod[j];
+							for(int k=0;k<numfil; k++) matriz[k][i] = matriz[k][j];
+							vectorCod[j] = Integer.toString(numTemp);
+							for(int k=0;k<numfil; k++) matriz[k][j] = vecTemp[k];
+
+						}
+					}
+				}
+				return matriz;
+			}
+    
+                        public static String codigoDesc(String matriz[][]){
+				String cadena ="";
+			int	n = matriz.length;
+			int	m = matriz[0].length;
+				for(int i=0;i<n; i++){
+					for(int j=0;j<m; j++){
+						cadena = cadena + matriz[i][j];				
+					}
+				}
+				return cadena.substring(cadena.indexOf("C")+1);
+			}
+			
+			public void escribirDesord(String matriz[][]){
+				//divRP = document.getElementById(divc);
+				String cadena ="",lis="";
+				int n = matriz.length;
+				int m = matriz[0].length;
+				for(int i=0;i<n; i++){
+					for(int j=0;j<m; j++){
+						cadena = cadena + matriz[i][j];				
+					}
+				}
+				lis =lis+cadena;
+                               
+                               
+			}
+               public static String[][] MatrizEnc(String mensaje,int numCol, int numfilas){
+				String[] vecMensaje = mensaje.split("");//convierte una cadena en un vector
+				String[][] matriz = null;//declara una matriz
+				int k=0;
+				int numi=numfilas;// se saca el numero de filas
+				for(int i=0;i<numi; i++){
+					//matriz[i]=[];
+					for(int j=0;j<numCol; j++){
+						if(k<vecMensaje.length){
+							matriz[i][j]=vecMensaje[k];
+							k++;
+						}else{
+							matriz[i][j]= "";
+						}
+						
+					}
+				}
+				return matriz;//regresa la matriz
+			}
+			public void escribir(String matriz[][],String divc){
+			//String divRP = document.getElementById(divc);
+				String cadena ="";
+				cadena = cadena + "<table>";
+				for(int  i=0;i<matriz.length; i++){
+					cadena = cadena + "<tr>";
+					for(int j=0;j<matriz[i].length; j++){
+						cadena = cadena +matriz[i][j]+"\n";				
+					}
+					cadena = cadena + "</tr>";
+				}
+				cadena = cadena + "</table>";
+				//divRP.innerHTML =divRP.innerHTML + cadena;
+				
+			}
+			public void escribirOrd(String matriz[][], String divc){
+				//divRP = document.getElementById(divc);
+				String cadena ="";
+				int n = matriz.length;
+				 int m = matriz[0].length;
+				for(int i=0;i<m; i++){
+					for(int j=0;j<n; j++){
+						cadena = cadena + matriz[j][i];				
+					}
+				}
+				//divRP.innerHTML =divRP.innerHTML + cadena;
+			}
+			public void escribirOrd2(String matriz[][],String divc,String orden){
+				//divRP = document.getElementById(divc);
+				String[]vecOrden = orden.split("");
+				String cadena ="";
+				int num =0;
+                                int n = matriz.length;
+				int m = matriz[0].length;				
+				for(int i=0;i<m; i++){
+					for(int j=0;j<n; j++){
+						num=Integer.parseInt(vecOrden[i])-1;
+						cadena = cadena + matriz[j][num];//escribe fila , columna que sale del vector de orden.				
+					}
+				}
+				//divRP.innerHTML =divRP.innerHTML + cadena;
+			}         
+                        
 }
