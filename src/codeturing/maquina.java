@@ -69,6 +69,8 @@ public Image getIconImage() {
         limpi2 = new javax.swing.JButton();
         jLabel8 = new javax.swing.JLabel();
         jPanel7 = new javax.swing.JPanel();
+        m2 = new javax.swing.JTextField();
+        m3 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setBackground(new java.awt.Color(51, 51, 51));
@@ -253,7 +255,7 @@ public Image getIconImage() {
         resul1.setDisabledTextColor(new java.awt.Color(255, 255, 255));
         jScrollPane3.setViewportView(resul1);
 
-        jPanel2.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(128, 130, 470, 350));
+        jPanel2.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(128, 190, 470, 290));
 
         jLabel9.setFont(new java.awt.Font("MV Boli", 0, 12)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(0, 204, 255));
@@ -345,17 +347,15 @@ public Image getIconImage() {
         jPanel2.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
 
         jPanel7.setBackground(new java.awt.Color(34, 37, 52));
+        jPanel7.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
-        jPanel7.setLayout(jPanel7Layout);
-        jPanel7Layout.setHorizontalGroup(
-            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 510, Short.MAX_VALUE)
-        );
-        jPanel7Layout.setVerticalGroup(
-            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 410, Short.MAX_VALUE)
-        );
+        m2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                m2ActionPerformed(evt);
+            }
+        });
+        jPanel7.add(m2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 56, 450, -1));
+        jPanel7.add(m3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, 450, -1));
 
         jPanel2.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 70, 510, 410));
 
@@ -444,11 +444,15 @@ public Image getIconImage() {
 
     private void Mje4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Mje4ActionPerformed
         String mensaje=this.mensage1.getText();
+        String mensaje2=this.m2.getText();
+        String mensaje3=this.m3.getText();
         if (mensaje.equals("")) {
             JOptionPane.showMessageDialog(null,"Alerta no a escrito el mensaje1");
         } else {
         mensaje= mensaje.replaceAll("\\s","");
-            Desencriptar.Desencriptar1(mensaje);
+        mensaje2= mensaje2.replaceAll("\\s","");
+         mensaje3= mensaje3.replaceAll("\\s","");
+            Desencriptar.Desencriptar1(mensaje,mensaje2,mensaje3);
             resul1.setText(String.valueOf(Desencriptar.lista1)); }
        
     }//GEN-LAST:event_Mje4ActionPerformed
@@ -488,6 +492,10 @@ public Image getIconImage() {
     private void limpi2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_limpi2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_limpi2ActionPerformed
+
+    private void m2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_m2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -558,6 +566,8 @@ public Image getIconImage() {
     private javax.swing.JToggleButton jToggleButton2;
     private javax.swing.JButton limpi;
     private javax.swing.JButton limpi2;
+    private javax.swing.JTextField m2;
+    private javax.swing.JTextField m3;
     private javax.swing.JTextField mensage;
     private javax.swing.JTextField mensage1;
     private javax.swing.JTextArea resul;

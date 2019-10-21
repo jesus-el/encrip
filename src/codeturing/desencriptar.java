@@ -5,30 +5,50 @@ import java.util.Scanner;
 
 
 public class desencriptar {
-    String lista1="",listotal="";
+    String lista1="",listotal="",cadenaescri="",cadenaescri2="";
     String tabla="0123456789";
     int colunas=0;
     int N1[];
      public static int getNumFilas(double numero) {
         return (int)Math.ceil(numero);
     }
-    public void Desencriptar1(String mensaje_para_desencriptar){
-    int Cat = mensaje_para_desencriptar.length();
-    int comtador=0;
-        for (int i = 0; i < mensaje_para_desencriptar.length(); i++) {
-            if(Character.isDigit(mensaje_para_desencriptar.charAt(i))){
-              comtador++;
+     public static int colun(String msg){
+          int res = 0;
+        for (int i = 0; i < msg.length(); i++) {
+            if(Character.isDigit(msg.charAt(i))) {
+                res ++;
             }
         }
-     int resultado = comtador-3;
-     System.err.println(""+resultado);
-      colunas=resultado;
+        return res-3;
+     }
+    public void Desencriptar1(String mensaje_para_desencriptar ,String mensaje_para_desencriptar2,String mensaje_para_desencriptar3){
+    int Cat = mensaje_para_desencriptar.length();
+    int Cat2 =  mensaje_para_desencriptar2.length();
+    int cat3 =  mensaje_para_desencriptar3.length();
+    colunas = colun(mensaje_para_desencriptar);
+   
       //miguel
         String saludo = mensaje_para_desencriptar;
-        int columnas = resultado;
+       
         //String saludo = "HHEA1EIR44IT0C2LL63";
-        int numFilas = getNumFilas((double) saludo.length()/ (double) columnas);
-        
+        int numFilas = getNumFilas((double) saludo.length()/ (double) colunas);
+        int numFilas2 = getNumFilas((double) mensaje_para_desencriptar2.length()/ (double) colunas);
+        int numFilas3 = getNumFilas((double) mensaje_para_desencriptar3.length()/ (double) colunas);
+        String ordColumnas = codigoDesc(MatrizDesenc(mensaje_para_desencriptar,MatrizEnc(mensaje_para_desencriptar, colunas,numFilas),colunas,numFilas));
+        lista1="NUMERORO DE COLUNNAS\n"+colunas;
+        lista1+="\n RESULTADO\n";
+        lista1+="\n ****Mensaje 1****\n";
+        escribir(MatrizDesenc(mensaje_para_desencriptar,MatrizEnc(mensaje_para_desencriptar, colunas,numFilas),colunas,numFilas));
+        lista1+=" "+cadenaescri;
+        lista1+="\n ****Mensaje 2****\n";
+        escribir(MatrizDesenc2(mensaje_para_desencriptar2,MatrizEnc(mensaje_para_desencriptar2, colunas,numFilas2),colunas,numFilas2,ordColumnas));
+        lista1+=" "+cadenaescri;
+        lista1+="\n ****Mensaje 3****\n";
+        escribir(MatrizDesenc(mensaje_para_desencriptar3,MatrizEnc(mensaje_para_desencriptar3, colunas,numFilas3),colunas,numFilas3));
+        lista1+=">>\n"+cadenaescri;
+        lista1+=" "+">>>DEscencritacion<<";
+        lista1+="\n***Mensaje 1***\n ";
+        escribirDesord(MatrizDesenc(mensaje_para_desencriptar,MatrizEnc(mensaje_para_desencriptar, colunas,numFilas),colunas,numFilas));
         
     }
     public void mensajedesenciptar2(String mensaje_para_desencriptar){
@@ -156,18 +176,18 @@ public class desencriptar {
 				}
 				return matriz;//regresa la matriz
 			}
-			public void escribir(String matriz[][],String divc){
+			public void escribir(String matriz[][]){
 			//String divRP = document.getElementById(divc);
 				String cadena ="";
 				cadena = cadena + "<table>";
 				for(int  i=0;i<matriz.length; i++){
-					cadena = cadena + "<tr>";
+					
 					for(int j=0;j<matriz[i].length; j++){
-						cadena = cadena +matriz[i][j]+"\n";				
+						cadena = cadena +matriz[i][j]+" ";				
 					}
-					cadena = cadena + "</tr>";
+					cadena = cadena + "\n";
 				}
-				cadena = cadena + "</table>";
+				 cadenaescri=cadena ;
 				//divRP.innerHTML =divRP.innerHTML + cadena;
 				
 			}
@@ -197,6 +217,11 @@ public class desencriptar {
 					}
 				}
 				//divRP.innerHTML =divRP.innerHTML + cadena;
-			}         
+			}
+                        public int numFila(String mensaje,int numcolumnas){
+				String[] vecMensaje = mensaje.split("");
+				if(vecMensaje.length%numcolumnas==0)return vecMensaje.length/numcolumnas;
+				else return (int)Math.ceil(vecMensaje.length/numcolumnas) +1;
+			}
                         
 }
